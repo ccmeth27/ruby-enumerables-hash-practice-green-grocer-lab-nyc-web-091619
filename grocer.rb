@@ -34,7 +34,7 @@ def apply_clearance(cart)
       info[:price] = (info[:price] * 0.80)
     end
   end  
-  cart
+  cart.round
 end
 
 def checkout(cart, coupons)
