@@ -1,7 +1,7 @@
 def consolidate_cart(cart)
   cart_hash = {}
   cart.each do |item|
-    item_name = item.Keys[0]
+    item_name = item.key?
     if cart_hash[item_name]
       cart_hash[item_name][:count] += 1 
     else cart_hash[item_name] = item[item_name]
