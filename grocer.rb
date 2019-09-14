@@ -1,4 +1,5 @@
 def consolidate_cart(cart)
+  cart_hash = {}
   cart.map.to_h { |cart| 
 end
 
