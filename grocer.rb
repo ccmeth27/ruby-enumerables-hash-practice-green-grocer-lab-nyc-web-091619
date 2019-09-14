@@ -15,7 +15,7 @@ end
 def apply_coupons(cart, coupons)
   cart_hash = cart 
   coupons.each do |coupons_hash|
-    
+    item = coupons_hash[item]
 end
 
 def apply_clearance(cart)
