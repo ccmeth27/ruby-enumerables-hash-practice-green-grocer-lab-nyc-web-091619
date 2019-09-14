@@ -5,7 +5,7 @@ def consolidate_cart(cart)
       if cart_hash[name].nil?
       cart_hash[name] = price_hash.merge({:count => 1}) 
       else 
-      cart_hash[item_name][:count] += 1
+      cart_hash[name][:count] += 1
       end
     end 
   end 
