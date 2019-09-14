@@ -1,6 +1,6 @@
 def consolidate_cart(cart)
   cart_hash = {}
-  cart.map.to_h { |cart| 
+  cart.collect { |cart| 
 end
 
 def apply_coupons(cart, coupons)
