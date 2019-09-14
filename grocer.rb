@@ -13,6 +13,7 @@ def consolidate_cart(cart)
 end
 
 def apply_coupons(cart, coupons)
+  cart_hash = cart
   coupons.each do |each_coupon|
     coupon_item = each_coupon[:item]
     if cart[coupon_item] && cart[coupon_item][:count] >= each_coupon[:num]
