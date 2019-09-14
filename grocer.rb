@@ -30,7 +30,7 @@ def apply_coupons(cart, coupons)
         cart_hash["#{item} W/COUPON"][:count] += 1
       end
     end
-  hash[item][:count] -= coupon_hash[:num
+  hash[item][:count] -= coupon_hash[:num]
 end
 
 def apply_clearance(cart)
